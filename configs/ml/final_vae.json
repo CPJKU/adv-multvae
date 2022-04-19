@@ -1,0 +1,40 @@
+{
+    "general_search_params": {
+    },
+
+    "model_params": {
+        "p_dims": [100],
+        "input_dropout_rate": 0.1,
+        "latent_dropout_rate": 0.0,
+        "normalize_inputs": true
+    },
+
+    "model_search_params": {
+    },
+
+    "opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    },
+
+    "opt_search_params": {
+    },
+
+    "loss_params": {
+        "beta": 0.8
+    },
+
+    "loss_search_params": {
+	},
+
+    "atk_params": {
+        "size": [2],
+        "activation": "relu",
+        "input_dropout": 0.5
+    },
+
+    "atk_opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    }
+}

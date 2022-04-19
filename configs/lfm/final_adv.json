@@ -1,0 +1,68 @@
+{
+    "general_params": {
+        "n_epochs": 100
+    },
+
+    "model_params": {
+        "p_dims": [500],
+        "input_dropout_rate": 0.1,
+        "latent_dropout_rate": 0.0,
+        "normalize_inputs": true
+    },
+
+    "model_search_params": {
+    },
+
+    "opt_params": {
+        "lr": 5e-4,
+        "weight_decay": 1e-4
+    },
+
+    "opt_search_params": {
+    },
+
+    "loss_params": {
+        "beta": 0.2
+    },
+
+    "loss_search_params": {
+	},
+
+    "adv_params": {
+        "in_use": true,
+        "perform_warmup": false,
+        "n_epochs_warmup": 0,
+        "loss_weight": 1,
+        "latent_dropout": 0.7,
+        "n_adv": 10,
+        "dims": [5, 2],
+
+        "store_last": true,
+        "earlystop_on_adv": true,
+        "min_epochs_earlystopping": 10
+    },
+
+    "adv_search_params": {
+        "grad_scaling": [0, 1, 10, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400]
+    },
+
+    "adv_opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    },
+
+    "adv_opt_search_params": {
+    },
+
+    "atk_params": {
+        "n_epochs": 25,
+        "size": [2],
+        "activation": "relu",
+        "input_dropout": 0.5
+    },
+
+    "atk_opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    }
+}

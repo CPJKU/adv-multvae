@@ -1,0 +1,10 @@
+{
+    "general": {
+        "n_epochs": 110
+    },
+
+    "dec_opt": {
+        "lr": 1e-4,
+        "weight_decay": 2e-4
+    }
+}

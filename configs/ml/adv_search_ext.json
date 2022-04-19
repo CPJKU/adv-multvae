@@ -1,0 +1,52 @@
+{
+    "model_params": {
+        "latent_dropout_rate": 0,
+        "normalize_inputs": true,
+        "p_dims": [100],
+        "input_dropout_rate": 0.1
+    },
+
+    "model_search_params": {
+    },
+
+    "opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    },
+
+    "opt_search_params": {
+    },
+
+    "loss_params": {
+        "beta": 0.8
+    },
+
+    "loss_search_params": {
+	},
+
+    "adv_params": {
+        "in_use": true,
+        "perform_warmup": true,
+        "loss_weight": 1,
+        "n_epochs_warmup": 20
+    },
+
+    "adv_search_params": {
+        "grad_scaling": [0, 10, 20, 30],
+        "n_adv": [10],
+        "dims": [
+            [5, 2],
+            [10, 2],
+            [20, 2]
+        ],
+        "latent_dropout": [0.7]
+    },
+
+    "adv_opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    },
+
+    "adv_opt_search_params": {
+    }
+}

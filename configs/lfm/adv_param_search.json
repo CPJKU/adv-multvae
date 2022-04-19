@@ -1,0 +1,43 @@
+{
+    "model_params": {
+        "latent_dropout_rate": 0,
+        "normalize_inputs": true,
+        "p_dims": [500],
+        "input_dropout_rate": 0.1
+    },
+
+    "model_search_params": {
+    },
+
+    "opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    },
+
+    "opt_search_params": {
+    },
+
+    "loss_params": {
+        "beta": 0.2
+    },
+
+    "loss_search_params": {
+	},
+
+    "adv_params": {
+        "in_use": true,
+        "perform_warmup": true,
+        "dims": [2],
+        "n_adv": 3,
+        "loss_weight": 1
+    },
+
+    "adv_search_params": {
+        "grad_scaling": [
+            0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9,
+            1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9,
+            2, 2.5, 3, 5
+        ],
+        "n_epochs_warmup": [5, 15]
+    }
+}

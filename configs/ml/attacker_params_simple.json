@@ -1,0 +1,13 @@
+{
+  "model": {
+    "size": [
+      2
+    ],
+    "activation": "relu",
+    "input_dropout": 0.5
+  },
+  "opt": {
+    "lr": 1e-3,
+    "weight_decay": 1e-4
+  }
+}

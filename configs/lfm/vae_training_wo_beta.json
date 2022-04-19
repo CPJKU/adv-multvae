@@ -1,0 +1,30 @@
+{
+    "model_params": {
+        "latent_dropout_rate": 0,
+        "normalize_inputs": true
+    },
+
+    "model_search_params": {
+        "p_dims": [
+            [500],
+            [300],
+            [100]
+        ],
+        "input_dropout_rate": [0.1, 0.3, 0.5]
+    },
+
+    "opt_params": {},
+
+    "opt_search_params": {
+        "lr": [1e-3],
+        "weight_decay": [0.0, 1e-2, 1e-3, 1e-4]
+    },
+
+    "loss_params": {
+        "beta_cap": 0,
+        "beta_steps": 1,
+        "beta_patience": 0
+    },
+
+    "loss_search_params": {}
+}

@@ -1,0 +1,42 @@
+{
+    "model_params": {
+        "latent_dropout_rate": 0,
+        "normalize_inputs": true,
+        "p_dims": [100]
+    },
+
+    "model_search_params": {
+        "input_dropout_rate": [0, 0.1]
+    },
+
+    "opt_params": {
+        "lr": 1e-3,
+        "weight_decay": 1e-4
+    },
+
+    "opt_search_params": {
+    },
+
+    "enc_opt_params": {
+    },
+
+    "enc_opt_search_params": {
+        "weight_decay": [1e-3, 5e-4, 1e-4, 5e-5]
+    },
+
+    "dec_opt_params": {
+    },
+
+    "dec_opt_search_params": {
+        "weight_decay": [1e-3, 5e-4, 1e-4, 5e-5]
+    },
+
+    "loss_params": {
+    },
+
+    "loss_search_params": {
+        "beta": [
+            0.6, 0.8, 1.0
+        ]
+	}
+}
